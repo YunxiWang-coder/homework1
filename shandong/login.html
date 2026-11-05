@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>登录注册 - 好客山东</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #e9f9d9;
+        }
+        nav {
+            width: 100%;
+            background-color: #238b38;
+        }
+        .nav-wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: #176b28;
+        }
+        .container {
+            width: 1200px;
+            margin: 30px auto;
+        }
+        h2 {
+            color: #1a6b29;
+            margin-bottom:20px;
+            border-left:4px solid #238b38;
+            padding-left:10px;
+        }
+        .login-wrap{
+            display:flex;
+            gap:40px;
+            justify-content:center;
+        }
+        .login-box{
+            width:360px;
+            background:#fff;
+            padding:28px;
+        }
+        .login-box h3{
+            text-align:center;
+            color:#238b38;
+            margin-bottom:20px;
+        }
+        .form-item{
+            margin-bottom:16px;
+        }
+        label{
+            display:block;
+            margin-bottom:6px;
+        }
+        input{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+        }
+        button{
+            width:100%;
+            padding:12px;
+            background:#238b38;
+            color:#fff;
+            border:none;
+            font-size:16px;
+            cursor:pointer;
+        }
+        button:hover{
+            background:#176b28;
+        }
+        footer{
+            background:#238b38;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">Home Page</a>
+            <a href="food.html">Delicacies</a>
+            <a href="scenic.html">Scenic Spots</a>
+            <a href="guide.html">Travel Guide</a>
+            <a href="message.html">Message</a>
+            <a href="login.html">Log in/Register</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Log in/Register</h2>
+        <div class="login-wrap">
+            <div class="login-box">
+                <h3>User login</h3>
+                <div class="form-item">
+                    <label>Account</label>
+                    <input type="text" placeholder="Enter account number">
+                </div>
+                <div class="form-item">
+                    <label>Cipher</label>
+                    <input type="password" placeholder="Enter password">
+                </div>
+                <button>Log in</button>
+            </div>
+            <div class="login-box">
+                <h3>User Registration</h3>
+                <div class="form-item">
+                    <label>Account</label>
+                    <input type="text" placeholder="Set up an account">
+                </div>
+                <div class="form-item">
+                    <label>Cipher</label>
+                    <input type="password" placeholder="Set a password">
+                </div>
+                <div class="form-item">
+                    <label>Confirm password</label>
+                    <input type="password" placeholder="Enter your password again.">
+                </div>
+                <button>Registered</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © 山东 all rights reserved.
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Scenic Spots-Shan Dong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #e9f9d9;
+        }
+        nav {
+            width: 100%;
+            background-color: #238b38;
+        }
+        .nav-wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: #176b28;
+        }
+        .container {
+            width: 1200px;
+            margin: 30px auto;
+        }
+        h2 {
+            color: #1a6b29;
+            margin-bottom:20px;
+            border-left:4px solid #238b38;
+            padding-left:10px;
+        }
+        .scene-item{
+            display:flex;
+            gap:20px;
+            background:#fff;
+            margin-bottom:24px;
+            padding:16px;
+        }
+        .scene-item img{
+            width:320px;
+            height:200px;
+            object-fit:cover;
+        }
+        .scene-text h3{
+            color:#238b38;
+            margin-bottom:8px;
+        }
+        .scene-text p{
+            line-height:1.7;
+        }
+        footer{
+            background:#238b38;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">Home Page</a>
+            <a href="food.html">Delicacies</a>
+            <a href="scenic.html">Scenic Spots</a>
+            <a href="guide.html">Travel Guide</a>
+            <a href="message.html">Message</a>
+            <a href="login.html">Log in/Register</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Famous attractions in Shandong</h2>
+        <div class="scene-item">
+            <img src="img/泰山.jpg" alt="泰山">
+            <div class="scene-text">
+                <h3>Mount Tai</h3>
+                <p>The foremost of the Five Great Mountains, it is a site of both World Cultural and Natural Heritage. It has been a place for emperors throughout the ages to perform sacrificial rituals. The mountain's majestic grandeur and its sunrise scenery are renowned worldwide.</p>
+            </div>
+        </div>
+        <div class="scene-item">
+            <img src="img/曲阜.jpg" alt="三孔">
+            <div class="scene-text">
+                <h3>The Three Memorial Edifices of Confucius in Qufu</h3>
+                <p>The Confucian Temple, Confucius Mansion, and Confucius Cemetery, the birthplace of Confucian culture, are ancient architectural complexes commemorating Confucius</p>
+            </div>
+        </div>
+        <div class="scene-item">
+            <img src="img/趵突泉.jpg" alt="趵突泉">
+            <div class="scene-text">
+                <h3>Bao Tu Spring</h3>
+                <p>The foremost among Jinan's 72 Springs, it is a landmark of the Spring City, with springs gushing year-round and a profound historical heritage.</p>
+            </div>
+        </div>
+        <div class="scene-item">
+            <img src="img/青岛.jpg" alt="青岛栈桥">
+            <div class="scene-text">
+                <h3>Qingdao Pier</h3>
+                <p>Qingdao, a symbol of the city, boasts beautiful coastal scenery and is a popular destination for watching the sea and feeding seagulls.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © 山东 all rights reserved.
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

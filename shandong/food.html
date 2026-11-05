@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>美食推荐 - 好客山东</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #e9f9d9;
+        }
+        nav {
+            width: 100%;
+            background-color: #238b38;
+        }
+        .nav-wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: #176b28;
+        }
+        .container {
+            width: 1200px;
+            margin: 30px auto;
+        }
+        h2 {
+            color: #1a6b29;
+            margin-bottom:20px;
+            border-left:4px solid #238b38;
+            padding-left:10px;
+        }
+        .food-list{
+            display:flex;
+            flex-wrap:wrap;
+            gap:24px;
+        }
+        .food-item{
+            width: calc(33.33% - 16px);
+            background:#fff;
+            overflow:hidden;
+        }
+        .food-item img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+        .food-item .text{
+            padding:16px;
+            line-height:1.7;
+        }
+        .food-item h3{
+            margin-bottom:8px;
+            color:#238b38;
+        }
+        footer{
+            background:#238b38;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">Home Page</a>
+            <a href="food.html">Delicacies</a>
+            <a href="scenic.html">Scenic Spots</a>
+            <a href="guide.html">Travel Guide</a>
+            <a href="message.html">Message</a>
+            <a href="login.html">Log in/Register</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>ShanDong Food Recommendation</h2>
+        <div class="food-list">
+            <div class="food-item">
+                <img src="img/大肠.jpg" alt="Jiu Zhuan Da Chang">
+                <div class="text">
+                    <h3>Jiu Zhuan Da Chang</h3>
+                    <p>A classic Lu cuisine dish, it blends sour, sweet, salty, spicy, and umami flavors, with intricate preparation. It is a renowned dish from Jinan.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="img/海参.jpg" alt="葱烧海参">
+                <div class="text">
+                    <h3>Cong Shao Hai Shen</h3>
+                    <p>A representative of Shandong cuisine, featuring tender and soft sea cucumbers, rich scallion aroma, and a fresh, mellow flavor.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="img/油璇.jpg" alt="油旋">
+                <div class="text">
+                    <h3>You Xuan</h3>
+                    <p>Jinan's specialty snack features a crispy outer layer, multiple layers inside, and an abundant onion aroma.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="img/水饺.jpg" alt="鲅鱼饺子">
+                <div class="text">
+                    <h3>Ba YU Shui Jiao</h3>
+                    <p>A Jiaodong specialty, with tender and fresh fish, a smooth and delicate texture, and a rich seafood flavor.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="img/扒鸡.jpg" alt="德州扒鸡">
+                <div class="text">
+                    <h3>De Zhou Pa Ji</h3>
+                    <p>Chinese delicacy, with tender and fall-off-the-bone meat, seasoned with five aromatic spices, fragrant yet not greasy.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="img/烧饼.jpg" alt="周村烧饼">
+                <div class="text">
+                    <h3>Zhou Cun Shao Bing</h3>
+                    <p>Delicately crisp and sweet, with a rich sesame aroma, this is a traditional snack from Zibo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © 山东 all rights reserved.
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

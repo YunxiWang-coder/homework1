@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>在线留言 - 好客山东</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #e9f9d9;
+        }
+        nav {
+            width: 100%;
+            background-color: #238b38;
+        }
+        .nav-wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: #176b28;
+        }
+        .container {
+            width: 1200px;
+            margin: 30px auto;
+        }
+        h2 {
+            color: #1a6b29;
+            margin-bottom:20px;
+            border-left:4px solid #238b38;
+            padding-left:10px;
+        }
+        .form-box{
+            width:600px;
+            background:#fff;
+            padding:30px;
+            margin:0 auto;
+        }
+        .form-item{
+            margin-bottom:16px;
+        }
+        label{
+            display:block;
+            margin-bottom:6px;
+            color:#222;
+        }
+        input,textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            font-size:14px;
+        }
+        textarea{
+            height:140px;
+            resize:none;
+        }
+        button{
+            width:100%;
+            padding:12px;
+            background:#238b38;
+            color:#fff;
+            border:none;
+            font-size:16px;
+            cursor:pointer;
+        }
+        button:hover{
+            background:#176b28;
+        }
+        footer{
+            background:#238b38;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">Home PageHome Page</a>
+            <a href="food.html">Delicacies</a>
+            <a href="scenic.html">Scenic Spots</a>
+            <a href="guide.html">Travel Guide</a>
+            <a href="message.html">Message</a>
+            <a href="login.html">Log in/Register</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Message</h2>
+        <div class="form-box">
+            <div class="form-item">
+                <label>Name</label>
+                <input type="text" placeholder="Please enter your name.">
+            </div>
+            <div class="form-item">
+                <label>Contact number</label>
+                <input type="tel" placeholder="Please enter your mobile number.">
+            </div>
+            <div class="form-item">
+                <label>Message content</label>
+                <textarea placeholder="Write down your questions or experiences from your trip."></textarea>
+            </div>
+            <button>Submit a message</button>
+        </div>
+    </div>
+    <footer>
+        Copyright © 山东 all rights reserved.
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

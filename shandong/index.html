@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>好客山东欢迎您</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #e9f9d9;
+        }
+        /* 导航栏 */
+        nav {
+            width: 100%;
+            background-color: #238b38;
+        }
+        .nav-wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: #176b28;
+        }
+        /* Banner轮播区域 */
+        .banner {
+            width: 100%;
+            height: 420px;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px #000;
+        }
+        .container {
+            width: 1200px;
+            margin: 30px auto;
+        }
+        h2 {
+            color: #1a6b29;
+            margin-bottom:20px;
+            border-left:4px solid #238b38;
+            padding-left:10px;
+        }
+        /* 简介图片卡片 */
+        .img-row{
+            display:flex;
+            gap:16px;
+            margin-bottom:20px;
+        }
+        .img-item{
+            flex:1;
+        }
+        .img-item img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+        .intro-box{
+            background:#238b38;
+            color:white;
+            padding:20px;
+            line-height:1.8;
+            margin-bottom:40px;
+        }
+        /* 山东历史板块 */
+        .history-wrap{
+            display:flex;
+            gap:20px;
+        }
+        .history-text{
+            width:60%;
+            background:#f2ffdd;
+            padding:20px;
+            line-height:1.7;
+            font-size:14px;
+        }
+        .video-area{
+            width:40%;
+        }
+        video{
+            width:100%;
+            margin-bottom:15px;
+        }
+        .video-area img{
+            width:48%;
+            height:120px;
+            object-fit:cover;
+        }
+        /* 页脚 */
+        footer{
+            background:#238b38;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav>
+        <div class="nav-wrap">
+            <a href="index.html">Home Page</a>
+            <a href="food.html">Delicacies</a>
+            <a href="scenic.html">Scenic Spots</a>
+            <a href="guide.html">Travel Guide</a>
+            <a href="message.html">Message</a>
+            <a href="login.html">Log in/Register</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="img/4.jpg" alt="山东风景">
+        <div class="banner-text">好客山东欢迎您</div>
+    </div>
+
+    <div class="container">
+        <!-- 山东简介 -->
+        <section>
+            <h2>山东简介</h2>
+            <div class="img-row">
+                <div class="img-item"><img src="img/3.jpg" alt="泰山"></div>
+                <div class="img-item"><img src="img/1.jpg" alt="趵突泉"></div>
+                <div class="img-item"><img src="img/2.jpg" alt="胶东海岸"></div>
+            </div>
+            <div class="intro-box">
+                <p>Shandong Province, abbreviated as "Lu", also known as Qilu, is located on the eastern coast of China and the lower reaches of the Yellow River. The mountains and rivers here are magnificent, the culture is rich, the Mount Tai is majestic, the Yellow River flows to the sea, and the coastline is long. It is the birthplace of Confucian culture.</p>
+                <p>Shandong is rich in tourism resources, with well-known scenic spots such as Mount Tai, Sankong, Qutu Spring, Penglai Pavilion, Qingdao Beach and so on. Qilu has both mountain scenery, spring city charm and beautiful coastal scenery. Hospitable Shandong is famous all over the country.</p>
+            </div>
+        </section>
+
+        <!-- 山东历史 -->
+        <section>
+            <h2>山东历史</h2>
+            <div class="history-wrap">
+                <div class="history-text">
+                    <p>Pre-Qin period: Shandong was the hometown of Qi and Lu, where the State of Qi and the State of Lu established a state, giving birth to Confucius, Mencius and other sages, and Confucian culture took root and germinated here. </p>
+                    <p>Qin and Han Dynasties: The world was unified, and Shandong was one of the core economic and cultural regions of the country, with developed sea salt and smelting industries.</p>
+                    <p>Tang and Song Dynasties: The literary vein of Qi and Lu continued, and there were many literati. Mount Tai seal Zen and Quancheng customs left countless historical imprints.</p>
+                    <p>Ming and Qing Dynasties: Shandong's commerce flourished, the towns along the canal flourished, and the folk culture was rich and colorful. </p>
+                    <p>Modern: Shandong relies on the advantages of ports and transportation to develop rapidly, and the cultural tourism industry is booming. "Hospitable Shandong" has become a resounding tourism business card.</p>
+                </div>
+                <div class="video-area">
+                    <video controls>
+                        <source src="video/1.mp4">
+                        您的浏览器不支持视频播放
+                    </video>
+                    <div>
+                        <img src="img/5.jpg">
+                        <img src="img/6.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Copyright © 山东 all rights reserved.
+    </footer>
+    <script>
+        //简易轮播
+        let index = 0;
+        const bannerImgList = [
+            "img/7.jpg",
+            "img/8.jpg",
+            "img/9.jpg"
+        ];
+        const bannerDom = document.querySelector(".banner img");
+        function autoPlay(){
+            index++;
+            if(index >= bannerImgList.length) index = 0;
+            bannerDom.src = bannerImgList[index];
+        }
+        setInterval(autoPlay, 3000);
+    </script>
+
+
+</body>
+</html>
+
